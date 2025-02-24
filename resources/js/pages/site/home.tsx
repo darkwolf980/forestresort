@@ -53,6 +53,45 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
+                <div className={'relative z-10 flex w-full max-w-[100vw] justify-center overflow-hidden border-t border-solid border-white/30'}>
+                    <Link
+                        className={
+                            'relative z-10 flex h-[5em] max-w-full min-w-[11.5em] flex-col items-center justify-center px-[2em] py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase'
+                        }
+                        href={'#'}
+                    >
+                        <div>Rooms</div>
+                    </Link>
+                    <Link
+                        className={
+                            'relative z-10 flex h-[5em] max-w-full min-w-[11.5em] flex-col items-center justify-center px-[2em] py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase'
+                        }
+                        href={'#'}
+                    >
+                        <div>Wellness</div>
+                    </Link>
+                    <Link
+                        className={
+                            'relative z-10 flex h-[5em] max-w-full min-w-[11.5em] flex-col items-center justify-center px-[2em] py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase'
+                        }
+                        href={'#'}
+                    >
+                        <div>Gastro</div>
+                    </Link>
+                    <Link
+                        className={
+                            'relative z-10 flex h-[5em] max-w-full min-w-[11.5em] flex-col items-center justify-center px-[2em] py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase'
+                        }
+                        href={'#'}
+                    >
+                        <div>Hotel</div>
+                    </Link>
+                    <div className={'absolute bottom-0 z-10 h-[1px] w-full'}></div>
+                    <div className={'absolute bottom-0 h-[1px] w-full bg-[#ffffff4d]'}></div>
+                </div>
+                <div></div>
+                <div className={'absolute inset-0 z-[1] blur-sm'}></div>
+                <div></div>
             </div>
         </>
     );
