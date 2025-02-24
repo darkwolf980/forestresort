@@ -6,11 +6,11 @@ const Home = () => {
         <>
             <Head title={'Forest Treetop Holiday Resort'} />
             <div className={'absolute top-0 right-0 bottom-auto left-0 z-50 w-full'}>
-                <div className={'relative z-40 flex w-full items-center justify-between px-12 py-4'}>
+                <div className={'relative z-40 flex w-full items-center justify-between py-[0.4em] md:px-[0.6em] lg:px-[2em]'}>
                     <div className={'flex flex-1 flex-row items-center justify-start'}>
                         <div
                             className={
-                                'fixed z-10 flex cursor-pointer flex-row items-center justify-center px-5 py-4 font-[400] text-nowrap text-white'
+                                'fixed z-10 flex cursor-pointer flex-row items-center justify-center px-[1em] py-[0.6em] font-[400] text-nowrap text-white md:px-5 md:py-4'
                             }
                         >
                             <img
@@ -23,13 +23,13 @@ const Home = () => {
                         </div>
                     </div>
                     <div className={'flex flex-1 flex-row items-center justify-center'}>
-                        <div className={'flex w-[6.5em] items-center justify-end opacity-50'}>
-                            <div className={'text-[0.8em] tracking-[1em] text-white'}>2024</div>
+                        <div className={'hidden w-[6.5em] items-center justify-end opacity-50 md:flex'}>
+                            <div className={'text-[0.8em] tracking-[1em] text-white md:block'}>2024</div>
                         </div>
                         <Link className={'relative z-10 mx-[2.5em] inline-block max-w-full'} href={route('home')}>
                             <Logo className={'inline-block w-[3.8em] max-w-none fill-emerald-400 align-middle select-none'} />
                         </Link>
-                        <div className={'flex w-[6.5em] items-center justify-start opacity-50'}>
+                        <div className={'hidden w-[6.5em] items-center justify-start opacity-50 md:flex'}>
                             <div className={'mx-[0.2em] h-[1em] w-[1em] bg-[url(/img/star.svg)] bg-cover bg-[50%] bg-no-repeat'}></div>
                             <div className={'mx-[0.2em] h-[1em] w-[1em] bg-[url(/img/star.svg)] bg-cover bg-[50%] bg-no-repeat'}></div>
                             <div className={'mx-[0.2em] h-[1em] w-[1em] bg-[url(/img/star.svg)] bg-cover bg-[50%] bg-no-repeat'}></div>
@@ -39,7 +39,7 @@ const Home = () => {
                     <div className={'flex flex-1 flex-row items-center justify-end'}>
                         <Link
                             className={
-                                'fixed z-10 flex max-w-full flex-row items-center justify-center px-[1.2em] py-[1em] font-[400] text-nowrap text-white'
+                                'fixed z-10 flex max-w-full flex-row items-center justify-center px-[1em] py-[0.6em] font-[400] text-nowrap text-white md:px-[1.2em] md:py-[1em]'
                             }
                             href={'#booking.com'}
                         >
@@ -53,10 +53,14 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div className={'relative z-10 flex w-full max-w-[100vw] justify-center overflow-hidden border-t border-solid border-white/30'}>
+                <div
+                    className={
+                        'relative z-10 flex w-full max-w-[100vw] justify-start overflow-auto border-t border-solid border-white/30 md:justify-center md:overflow-hidden'
+                    }
+                >
                     <Link
                         className={
-                            'relative z-10 flex h-[5em] max-w-full min-w-[11.5em] flex-col items-center justify-center px-[2em] py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase'
+                            'relative z-10 flex h-[5em] max-w-full min-w-auto flex-1 flex-col items-center justify-center py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase md:min-w-[11.5em] md:flex-none md:px-[2em]'
                         }
                         href={'#'}
                     >
@@ -64,33 +68,39 @@ const Home = () => {
                     </Link>
                     <Link
                         className={
-                            'relative z-10 flex h-[5em] max-w-full min-w-[11.5em] flex-col items-center justify-center px-[2em] py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase'
+                            'relative z-10 flex h-[5em] max-w-full min-w-auto flex-1 flex-col items-center justify-center py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase md:min-w-[11.5em] md:flex-none md:px-[2em]'
                         }
                         href={'#'}
                     >
-                        <div>Wellness</div>
+                        <div>Food</div>
                     </Link>
                     <Link
                         className={
-                            'relative z-10 flex h-[5em] max-w-full min-w-[11.5em] flex-col items-center justify-center px-[2em] py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase'
+                            'relative z-10 flex h-[5em] max-w-full min-w-auto flex-1 flex-col items-center justify-center py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase md:min-w-[11.5em] md:flex-none md:px-[2em]'
                         }
                         href={'#'}
                     >
-                        <div>Gastro</div>
+                        <div>Safari</div>
                     </Link>
                     <Link
                         className={
-                            'relative z-10 flex h-[5em] max-w-full min-w-[11.5em] flex-col items-center justify-center px-[2em] py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase'
+                            'relative z-10 flex h-[5em] max-w-full min-w-auto flex-1 flex-col items-center justify-center py-[1.5em] text-center text-[0.7em] font-[500] tracking-[0.1em] text-white uppercase md:min-w-[11.5em] md:flex-none md:px-[2em]'
                         }
                         href={'#'}
                     >
-                        <div>Hotel</div>
+                        <div>Contact</div>
                     </Link>
                     <div className={'absolute bottom-0 z-10 h-[1px] w-full'}></div>
                     <div className={'absolute bottom-0 h-[1px] w-full bg-[#ffffff4d]'}></div>
                 </div>
                 <div></div>
-                <div className={'absolute inset-0 z-[1] blur-sm'}></div>
+                <div className={'absolute inset-0 z-[1] blur-sm'}>
+                    <div
+                        className={
+                            "after:content-[' '] after:content-[' '] absolute top-0 right-auto bottom-auto left-0 after:clear-both after:table"
+                        }
+                    ></div>
+                </div>
                 <div></div>
             </div>
         </>
