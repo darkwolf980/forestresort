@@ -30,10 +30,10 @@ const Home = () => {
                             <Logo className={'inline-block w-[3.8em] max-w-none fill-emerald-400 align-middle select-none'} />
                         </Link>
                         <div className={'flex w-[6.5em] items-center justify-start opacity-50'}>
-                            <div className={"mx-[0.2em] h-[1em] w-[1em] bg-[url('./img/star.svg')] bg-cover bg-[50%] bg-no-repeat"}></div>
-                            <div className={"mx-[0.2em] h-[1em] w-[1em] bg-[url('./img/star.svg')] bg-cover bg-[50%] bg-no-repeat"}></div>
-                            <div className={"mx-[0.2em] h-[1em] w-[1em] bg-[url('./img/star.svg')] bg-cover bg-[50%] bg-no-repeat"}></div>
-                            <div className={"mx-[0.2em] h-[1em] w-[1em] bg-[url('./img/star.svg')] bg-cover bg-[50%] bg-no-repeat"}></div>
+                            <div className={'mx-[0.2em] h-[1em] w-[1em] bg-[url(/img/star.svg)] bg-cover bg-[50%] bg-no-repeat'}></div>
+                            <div className={'mx-[0.2em] h-[1em] w-[1em] bg-[url(/img/star.svg)] bg-cover bg-[50%] bg-no-repeat'}></div>
+                            <div className={'mx-[0.2em] h-[1em] w-[1em] bg-[url(/img/star.svg)] bg-cover bg-[50%] bg-no-repeat'}></div>
+                            <div className={'mx-[0.2em] h-[1em] w-[1em] bg-[url(/img/star.svg)] bg-cover bg-[50%] bg-no-repeat'}></div>
                         </div>
                     </div>
                     <div className={'flex flex-1 flex-row items-center justify-end'}>
