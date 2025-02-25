@@ -54,6 +54,7 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
+                {/*End of Top nav section*/}
 
                 {/*Bottom Nav section*/}
                 <div
@@ -96,10 +97,12 @@ const Home = () => {
                     <div className={'absolute bottom-0 z-10 h-[1px] w-full'}></div>
                     <div className={'absolute bottom-0 h-[1px] w-full bg-[#ffffff4d]'}></div>
                 </div>
+                {/*End of bottom nav Section*/}
 
                 {/*Menu section*/}
-                <div className={'fixed inset-0 z-[999] hidden overflow-hidden'}>
+                <div className={'fixed inset-0 z-[999] block overflow-hidden'}>
                     <div className={'absolute inset-0 z-20 flex h-full w-full justify-between overflow-auto lg:flex-wrap lg:overflow-auto'}>
+                        {/*Menu close Btn*/}
                         <div
                             className={
                                 'absolute top-[1em] left-[1.2em] z-[100] cursor-pointer touch-manipulation text-[1.5em] text-black md:top-[1.7em] md:left-[6vw] lg:top-[6vh]'
@@ -114,6 +117,9 @@ const Home = () => {
                                 <div className={'absolute h-full w-full rounded-full border-[1px] border-solid border-white'}></div>
                             </div>
                         </div>
+                        {/*End close Btn*/}
+
+                        {/*menu section left background image*/}
                         <div className={'absolute inset-0 z-[2] h-full w-full overflow-hidden md:w-[67%]'}>
                             <div className={'absolute inset-0 z-[4] bg-[#0d2727] opacity-80 mix-blend-multiply'}></div>
                             <img
@@ -122,13 +128,125 @@ const Home = () => {
                                 className={'absolute inset-0 z-[2] inline-block h-full w-full object-cover select-none'}
                             />
                         </div>
+                        {/*end menu section left background image*/}
+
+                        {/*Menu section left first content*/}
                         <div className={'w-full md:w-[66%]'}>
-                            <div className={'relative z-10 flex h-auto w-full flex-wrap items-stretch justify-between md:h-full'}></div>
+                            <div className={'relative z-10 flex h-auto w-full flex-wrap items-stretch justify-between md:h-full'}>
+                                {/*left col*/}
+                                <div
+                                    className={
+                                        'relative flex w-full flex-col items-center justify-start self-auto overflow-auto pt-[6em] pb-0 pl-[1em] md:w-1/2 md:flex-col md:self-stretch md:pt-[23vh] md:pb-[10vh] md:pl-[12vw]'
+                                    }
+                                >
+                                    <Link
+                                        className={
+                                            'relative flex w-full max-w-full cursor-pointer flex-row items-center justify-center py-[1.7vh] text-left text-[2.2em] font-[400] tracking-normal text-white md:justify-start'
+                                        }
+                                        href={'#room'}
+                                    >
+                                        <div>Room</div>
+                                        <div className={'absolute left-[-4.5vw] hidden text-base md:inline-block'}>I</div>
+                                    </Link>
+                                    <Link
+                                        className={
+                                            'relative flex w-full max-w-full cursor-pointer flex-row items-center justify-center py-[1.7vh] text-left text-[2.2em] font-[400] tracking-normal text-[#c2ddd3] md:justify-start'
+                                        }
+                                        href={'#room'}
+                                    >
+                                        <div>Food</div>
+                                        <div className={'absolute left-[-4.5vw] hidden text-base md:inline-block'}>II</div>
+                                    </Link>
+                                    <Link
+                                        className={
+                                            'relative flex w-full max-w-full cursor-pointer flex-row items-center justify-center py-[1.7vh] text-left text-[2.2em] font-[400] tracking-normal text-[#c2ddd3] md:justify-start'
+                                        }
+                                        href={'#room'}
+                                    >
+                                        <div>Safari</div>
+                                        <div className={'absolute left-[-4.5vw] hidden text-base md:inline-block'}>III</div>
+                                    </Link>
+                                    <Link
+                                        className={
+                                            'relative flex w-full max-w-full cursor-pointer flex-row items-center justify-center py-[1.7vh] text-left text-[2.2em] font-[400] tracking-normal text-[#c2ddd3] md:justify-start'
+                                        }
+                                        href={'#room'}
+                                    >
+                                        <div>Contact</div>
+                                        <div className={'absolute left-[-4.5vw] hidden text-base md:inline-block'}>IV</div>
+                                    </Link>
+                                </div>
+                                {/*end left col*/}
+
+                                {/*right col*/}
+                                <div
+                                    className={'relative flex w-1/2 flex-col items-center justify-start overflow-hidden pt-10 pr-[3em] md:pt-[25vh]'}
+                                >
+                                    <div className={'relative block w-full pl-[5em]'}>
+                                        <div className={'relative z-10 flex flex-col items-start justify-start'}>
+                                            <Link
+                                                className={
+                                                    'relative mb-[2vh] flex w-auto max-w-full items-center overflow-visible text-[1.4em] whitespace-nowrap text-(--light-grey)'
+                                                }
+                                                href={'#'}
+                                            >
+                                                <div>More about rooms</div>
+                                                <div
+                                                    className={
+                                                        'relative ml-[2em] flex h-[1.7em] min-h-[1.7em] w-[1.7em] min-w-[1.7em] flex-col items-center justify-center'
+                                                    }
+                                                >
+                                                    <img
+                                                        className={'inline-block w-[0.6em] max-w-full select-none'}
+                                                        src={'/img/left-arrow.svg'}
+                                                        alt={''}
+                                                    />
+                                                    <img
+                                                        className={'absolute z-20 hidden w-[1em] opacity-60'}
+                                                        src={'/img/left-arrow-2.svg'}
+                                                        alt={''}
+                                                    />
+                                                    <div
+                                                        className={
+                                                            'absolute z-[3] h-full w-full rounded-full border-[1px] border-solid border-[#788d8573]'
+                                                        }
+                                                    ></div>
+                                                </div>
+                                            </Link>
+                                            <div className={''}>
+                                                <div>
+                                                    <div className={'relative w-auto overflow-hidden text-[1em] whitespace-nowrap text-white'}>
+                                                        <Link className={'inline-block max-w-full text-[0.8em] text-(--lite-gray)'} href={'#'}>
+                                                            <div className={'my-[1.5vh]'}>Open room</div>
+                                                        </Link>
+                                                    </div>
+                                                    <div className={'relative w-auto overflow-hidden text-[1em] whitespace-nowrap text-white'}>
+                                                        <Link className={'inline-block max-w-full text-[0.8em] text-(--lite-gray)'} href={'#'}>
+                                                            <div className={'my-[1.5vh]'}>Tree house</div>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/*    end right col*/}
+                            </div>
                         </div>
-                        <div></div>
+                        {/*end menu section left content*/}
+
+                        {/*menu right content*/}
+                        {/* Stop here*/}
+                        <div className={''}></div>
                     </div>
+
+                    {/*Menu section background controller*/}
                     <div className={'absolute inset-0 z-[3] h-full w-full bg-[#3e4b48]'}></div>
                 </div>
+                {/*End of Menu section*/}
+
+                {/*nav and hero separator*/}
                 <div className={'absolute inset-0 z-[1] blur-sm'}>
                     <div
                         className={
@@ -136,6 +254,7 @@ const Home = () => {
                         }
                     ></div>
                 </div>
+                {/*end of nav and hero separator*/}
                 <div></div>
             </div>
         </>
