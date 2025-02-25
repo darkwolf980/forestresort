@@ -6,6 +6,7 @@ const Home = () => {
         <>
             <Head title={'Forest Treetop Holiday Resort'} />
             <div className={'absolute top-0 right-0 bottom-auto left-0 z-50 w-full'}>
+                {/*Top Nav section*/}
                 <div className={'relative z-40 flex w-full items-center justify-between py-[0.4em] md:px-[0.6em] lg:px-[2em]'}>
                     <div className={'flex flex-1 flex-row items-center justify-start'}>
                         <div
@@ -53,6 +54,8 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
+
+                {/*Bottom Nav section*/}
                 <div
                     className={
                         'relative z-10 flex w-full max-w-[100vw] justify-start overflow-auto border-t border-solid border-white/30 md:justify-center md:overflow-hidden'
@@ -93,7 +96,39 @@ const Home = () => {
                     <div className={'absolute bottom-0 z-10 h-[1px] w-full'}></div>
                     <div className={'absolute bottom-0 h-[1px] w-full bg-[#ffffff4d]'}></div>
                 </div>
-                <div></div>
+
+                {/*Menu section*/}
+                <div className={'fixed inset-0 z-[999] hidden overflow-hidden'}>
+                    <div className={'absolute inset-0 z-20 flex h-full w-full justify-between overflow-auto lg:flex-wrap lg:overflow-auto'}>
+                        <div
+                            className={
+                                'absolute top-[1em] left-[1.2em] z-[100] cursor-pointer touch-manipulation text-[1.5em] text-black md:top-[1.7em] md:left-[6vw] lg:top-[6vh]'
+                            }
+                        >
+                            <div className={'relative flex h-[1.7em] w-[1.7em] flex-col items-center justify-center'}>
+                                <img
+                                    className={'inline-block aspect-square w-[0.5em] max-w-full select-none'}
+                                    src={'/img/close-btn.svg'}
+                                    alt={'close btn'}
+                                />
+                                <div className={'absolute h-full w-full rounded-full border-[1px] border-solid border-white'}></div>
+                            </div>
+                        </div>
+                        <div className={'absolute inset-0 z-[2] h-full w-full overflow-hidden md:w-[67%]'}>
+                            <div className={'absolute inset-0 z-[4] bg-[#0d2727] opacity-80 mix-blend-multiply'}></div>
+                            <img
+                                src={'/img/menu_background.jpg'}
+                                alt={'menu background'}
+                                className={'absolute inset-0 z-[2] inline-block h-full w-full object-cover select-none'}
+                            />
+                        </div>
+                        <div className={'w-full md:w-[66%]'}>
+                            <div className={'relative z-10 flex h-auto w-full flex-wrap items-stretch justify-between md:h-full'}></div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div className={'absolute inset-0 z-[3] h-full w-full bg-[#3e4b48]'}></div>
+                </div>
                 <div className={'absolute inset-0 z-[1] blur-sm'}>
                     <div
                         className={
