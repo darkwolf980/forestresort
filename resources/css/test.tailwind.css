@@ -1,0 +1,4 @@
+/* Converted using Tailwind CSS v4 rules */
+.navigation {
+  @apply z-[998] justify-center items-center w-full absolute inset-0;
+} 
