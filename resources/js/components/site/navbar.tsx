@@ -36,9 +36,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden items-center space-x-8 md:flex">
             <NavLink href="/">Home</NavLink>
-            <NavLink href="/accommodations">Accommodations</NavLink>
-            <NavLink href="/amenities">Amenities</NavLink>
-            <NavLink href="/gallery">Gallery</NavLink>
+            <NavLink href="/accommodations">Rooms</NavLink>
             <NavLink href="/contact">Contact</NavLink>
             <Button className="rounded-none bg-green-700 px-4 py-2 text-white shadow-2xl transition-colors duration-300 hover:bg-green-800">
               Book Now
